@@ -16,7 +16,7 @@ export default function Nav(props) {
       <h3 className="schedulingH3">Scheduling</h3>
       <section className="topRight">
       <AppsIcon className="navIcons" />
-      <div className="roundInitial">D</div>
+      <div className="roundInitial">A</div>
       </section>
       </div>
       <div className="navMid">

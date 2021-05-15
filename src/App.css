@@ -1,11 +1,8 @@
 .App {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  width: 100%;
-  background-image: url('https://i.gifer.com/Ova.gif');
-  background-repeat: no-repeat;
-  background-size: 40em 60em;
+  /* background-image: url('https://i.gifer.com/Ova.gif'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 60em; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,6 +35,7 @@
   color: aliceblue;
   background-color: #1E90FF;
   border: black solid 1px;
+  /* padding-right: 1.5em; */
   
 }
 
@@ -45,9 +43,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  font-size: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* font-size: 1em; */
 }
 
 .navMid {
@@ -65,8 +63,8 @@
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 10px;
+  padding-right: 10px;
   border-top: black solid 2px;
 }
 
@@ -136,22 +134,59 @@ they seem to inherit from the class just above this one */
 /* List(body) ELEMENTS -------------------- */
 
 .siteList {
-  display: flex;
-  height: 35em;
+  height: calc(100vh - 194px);
 }
 
-.gif {
-  width: 100%;
-  height: 110%;
+/* .ListItems {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+} */
+
+.ListItem {
+margin: 10px auto;
+display: flex;
+justify-content: space-between;
+height: 5.5em;
+border:2px solid black;
+width: 95%;
+background-color: white;
+opacity: 0.75;
 }
+
+.ListItem p {
+  margin: 3px 0px 10px 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.SiteImage {
+  padding-top: 1em;
+  border-radius: 50%;
+  height: 3.5em;
+  width: 3.5em;
+}
+
+.ArrowNextPage {
+  height: 50px;
+}
+
+.SiteInfo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5em;
+}
+
+
 
 /* Footer ELEMENTS -------------------- */
 
 .pageFooter {
   display: flex;
-  margin-top: 0px;
-  border-top-left-radius: 45%;
-  border-top-right-radius: 45%;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
   flex-direction: column;
   justify-content: flex-end;
   border: black outset 1px;
