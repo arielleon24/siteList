@@ -14,7 +14,7 @@ export default function List(props) {
   const arrayOfItems = duplicateItem(ListItem)
 
   return (
-    <Slide bottom>
+    // <Slide bottom>
     <div className="siteList">
       {/* <img className="gif" src="https://i.gifer.com/Ova.gif" alt="MontrealGif" ></img> */}
       < ListItem />
@@ -23,6 +23,6 @@ export default function List(props) {
       < ListItem />
       < ListItem />
     </div>
-    </Slide>
+    // </Slide>
   )
 }

@@ -1,9 +1,12 @@
 .App {
   text-align: center;
-  /* background-image: url('https://i.gifer.com/Ova.gif'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100% 60em; */
+
 }
+
+.animate-background {
+  background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -135,6 +138,7 @@ they seem to inherit from the class just above this one */
 
 .siteList {
   height: calc(100vh - 194px);
+  padding-top: 10px;
 }
 
 /* .ListItems {
