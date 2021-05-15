@@ -28,6 +28,36 @@
   color: #61dafb;
 }
 
+.navbar {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: aliceblue;
+  background-color: rgb(0, 72, 255);
+  border: black solid 1px;
+}
+
+.navmid {
+  border-top: black solid 1px;
+}
+
+.navfoot {
+  background-color: white;
+  height: 35px;
+  color: black;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: black solid 3px;
+}
+
+.navSideIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
