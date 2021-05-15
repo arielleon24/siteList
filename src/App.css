@@ -3,6 +3,9 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
+  background-image: url('https://i.gifer.com/Ova.gif');
+  background-repeat: no-repeat;
+  background-size: 40em 60em;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -70,6 +73,10 @@
 .leftNavFoot {
   display: flex;
   align-items: center;
+}
+
+#allSites {
+  color: #1E90FF
 }
 
 .MuiSvgIcon-root {
