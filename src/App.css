@@ -36,20 +36,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: 1.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 1em;
+}
+
+.navmid {
+  display: flex;
+  border-top: black solid 1px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 3.5em;
 }
 
 .navfoot {
   background-color: white;
-  height: 1.7em;
+  height: 1.5em;
   color: black;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   border-top: black solid 2px;
 }
 
@@ -59,13 +67,13 @@
   height: 0em;
 }
 
+/* sizing is wrong for the elements in topnav 
+they seem to inherit from the class just above this one */
 .navIcons {
   display: flex;
   align-items: center;
   justify-content: center;
   color: black;
-  width: 1em;
-  height: 1em;
 }
 
 .navSideIcons {
@@ -80,20 +88,19 @@
 .topRight {
   display: flex;
 }
-/* cannot make buttons background transparent? */
+/* cannot round circle properly */
 
 .roundInitial {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-left: 0.5em; */
   background-color: white;
   color: black;
   border: 1px solid #0F1C3F;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 50%;
   margin-left: 0.25em;
 }
 
-.navmid {
-  border-top: black solid 1px;
-}
+

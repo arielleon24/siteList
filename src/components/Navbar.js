@@ -1,5 +1,7 @@
 import React from "react";
-// import { ArrowDropDownIcon, SubjectIcon } from '@material-ui/icons';
+
+
+//Material UI imports
 import AppsIcon from '@material-ui/icons/Apps';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import DehazeIcon from '@material-ui/icons/Dehaze';
@@ -12,7 +14,7 @@ export default function Nav(props) {
     <nav className="navbar">
       <div className="navtop">
       <DehazeIcon className="navIcons" />
-      <h1>Scheduling</h1>
+      <h3>Scheduling</h3>
       <section className="topRight">
       <AppsIcon className="navIcons" />
       <div className="roundInitial">D</div>
@@ -24,10 +26,10 @@ export default function Nav(props) {
       <footer className="navfoot">
         <h3>All sites</h3>
         <ArrowDropDownIcon />
-        <div className="navSideIcons">
+        <section className="navSideIcons">
           <FilterListIcon />
           <SearchIcon />
-        </div>
+        </section>
       </footer>
     </nav>
   );
