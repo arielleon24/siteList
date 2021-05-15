@@ -1,5 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -7,6 +10,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+/* NAV ELEMENTS -------------------- */
 
 .App-header {
   background-color: #282c34;
@@ -28,7 +33,7 @@
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   color: aliceblue;
-  background-color: rgb(45, 99, 235);
+  background-color: #1E90FF;
   border: black solid 1px;
 }
 
@@ -85,6 +90,10 @@ they seem to inherit from the class just above this one */
   height: 1em;
 }
 
+.schedulingH3 {
+  padding-left: 1.34em;
+}
+
 .topRight {
   display: flex;
 }
@@ -102,5 +111,25 @@ they seem to inherit from the class just above this one */
   border-radius: 50%;
   margin-left: 0.25em;
 }
+/* List(body) ELEMENTS -------------------- */
 
+.siteList {
+  display: flex;
+  height: 35em;
+}
 
+.gif {
+  width: 100%;
+}
+
+/* Footer ELEMENTS -------------------- */
+
+.pageFooter {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: black outset 1px;
+  width: 100%;
+  background-color: #1E90FF;
+}
