@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.navbar {
+.navBar {
   display: flex;
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
@@ -38,7 +38,7 @@
   
 }
 
-.navtop {
+.navTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   font-size: 1em;
 }
 
-.navmid {
+.navMid {
   display: flex;
   border-top: black solid 1px;
   justify-content: center;
@@ -55,7 +55,7 @@
   height: 3.5em;
 }
 
-.navfoot {
+.navFoot {
   background-color: white;
   height: 1.5em;
   color: black;
@@ -65,6 +65,11 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-top: black solid 2px;
+}
+
+.leftNavFoot {
+  display: flex;
+  align-items: center;
 }
 
 .MuiSvgIcon-root {

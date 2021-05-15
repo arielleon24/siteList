@@ -10,8 +10,8 @@ import FilterListIcon from '@material-ui/icons/FilterList';
 
 export default function Nav(props) {
   return (
-    <nav className="navbar">
-      <div className="navtop">
+    <nav className="navBar">
+      <div className="navTop">
       <DehazeIcon className="navIcons" />
       <h3 className="schedulingH3">Scheduling</h3>
       <section className="topRight">
@@ -19,12 +19,14 @@ export default function Nav(props) {
       <div className="roundInitial">D</div>
       </section>
       </div>
-      <div className="navmid">
+      <div className="navMid">
         <h3>Sites</h3>
       </div>
-      <footer className="navfoot">
+      <footer className="navFoot">
+        <section className="leftNavFoot">
         <h3>All sites</h3>
         <ArrowDropDownIcon id="downArrow" />
+        </section>
         <section className="navSideIcons">
           <FilterListIcon />
           <SearchIcon />
