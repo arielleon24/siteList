@@ -35,6 +35,7 @@
   color: aliceblue;
   background-color: #1E90FF;
   border: black solid 1px;
+  
 }
 
 .navtop {
@@ -111,6 +112,15 @@ they seem to inherit from the class just above this one */
   border-radius: 50%;
   margin-left: 0.25em;
 }
+
+#downArrow {
+  height: 4em;
+}
+
+/* not going to work because you can't track hover on mobile */
+/* #downArrow:hover {
+  transform: scale(3.5);
+} */
 /* List(body) ELEMENTS -------------------- */
 
 .siteList {
@@ -120,6 +130,7 @@ they seem to inherit from the class just above this one */
 
 .gif {
   width: 100%;
+  height: 110%;
 }
 
 /* Footer ELEMENTS -------------------- */
@@ -127,9 +138,12 @@ they seem to inherit from the class just above this one */
 .pageFooter {
   display: flex;
   margin-top: 0px;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
   flex-direction: column;
   justify-content: flex-end;
   border: black outset 1px;
   width: 100%;
   background-color: #1E90FF;
+  font-family: 'Source Sans Pro', sans-serif;
 }

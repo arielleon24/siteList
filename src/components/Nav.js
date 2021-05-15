@@ -24,7 +24,7 @@ export default function Nav(props) {
       </div>
       <footer className="navfoot">
         <h3>All sites</h3>
-        <ArrowDropDownIcon />
+        <ArrowDropDownIcon id="downArrow" />
         <section className="navSideIcons">
           <FilterListIcon />
           <SearchIcon />
