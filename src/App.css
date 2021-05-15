@@ -33,30 +33,79 @@
   flex-direction: column;
   font-family: 'Source Sans Pro', sans-serif;
   color: aliceblue;
-  background-color: rgb(0, 72, 255);
+  background-color: rgb(45, 99, 235);
   border: black solid 1px;
+}
+
+.navtop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.25em;
+}
+
+.navfoot {
+  background-color: white;
+  height: 1.7em;
+  color: black;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-top: black solid 2px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 0em;
+  width: 0em;
+  height: 0em;
+}
+
+.navIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 1em;
+  height: 1em;
+}
+
+.navSideIcons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+}
+
+.topRight {
+  display: flex;
+}
+/* cannot make buttons background transparent? */
+
+.roundInitial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 0.5em; */
+  background-color: white;
+  color: black;
+  border: 1px solid #0F1C3F;
+  border-radius: 50%;
+  margin-left: 0.25em;
 }
 
 .navmid {
   border-top: black solid 1px;
 }
 
-.navfoot {
-  background-color: white;
-  height: 35px;
-  color: black;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-top: black solid 3px;
-}
 
-.navSideIcons {
-  display: flex;
-  justify-content: space-between;
-}
+
+
 
 @keyframes App-logo-spin {
   from {
