@@ -13,7 +13,7 @@ export default function Nav(props) {
     <nav className="navBar">
       <div className="navTop">
       <DehazeIcon className="navIcons" />
-      <h3 className="schedulingH3">Scheduling</h3>
+      <h2 className="schedulingH3">Scheduling</h2>
       <section className="topRight">
       <AppsIcon className="navIcons" />
       <div className="roundInitial">A</div>

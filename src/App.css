@@ -166,7 +166,7 @@ box-shadow: #888888 2px 3px;
 }
 
 .SiteImage {
-  padding-top: 1em;
+  /* padding-top: 1em; */
   border-radius: 50%;
   height: 3.5em;
   width: 3.5em;
@@ -178,11 +178,34 @@ box-shadow: #888888 2px 3px;
 
 .SiteInfo {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   padding-left: 0.5em;
 }
 
 
+/* details page */
+
+.Details {
+  display: flex;
+  flex-direction: column;
+}
+
+.Detailhead {
+  display: flex;
+  align-items: center;
+  height: 6em;
+  border:1px solid black;
+  background-color: white;
+  background-color: #1E90FF;
+  margin: 0;
+  padding: 0;
+  }
+
+  .Detailhead p {
+    margin: 3px 0px 10px 0px;
+  }
 
 /* Footer ELEMENTS -------------------- */
 
