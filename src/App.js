@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Header from './components/Header'
 import List from './components/List'
+import Details from './components/Details'
 import Footer from './components/Footer'
 import { createBrowserHistory } from 'history';
 
@@ -20,12 +21,15 @@ function App() {
      <div className="App">
       <Nav />
       <Switch>
-        <Route path="/">
+        <Route path="/home">
             <Header />
             <div className="animate-background">
             <List />
             </div>
             <Footer />
+        </Route>
+        <Route path="/details">
+          <Details />
         </Route>
       </Switch>
      </div>
