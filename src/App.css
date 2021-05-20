@@ -4,7 +4,7 @@
 }
 
 .animate-background {
-  background-image: url('https://images.unsplash.com/photo-1536625400301-f8f8668d7fd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=347&q=80');
+  /* background-image: url('https://images.unsplash.com/photo-1536625400301-f8f8668d7fd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=347&q=80'); */
 }
 
 
@@ -154,6 +154,7 @@ border:2px solid black;
 width: 95%;
 background-color: white;
 opacity: 0.70;
+box-shadow: #888888 2px 3px;
 }
 
 .ListItem p {
