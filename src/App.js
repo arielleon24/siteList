@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './components/Nav'
+import Header from './components/Header'
 import List from './components/List'
 import Footer from './components/Footer'
 import { createBrowserHistory } from 'history';
@@ -16,17 +17,18 @@ const history = createBrowserHistory();
 function App() {
   return (
     <Router history={history}>
+     <div className="App">
+      <Nav />
       <Switch>
         <Route path="/">
-          <div className="App">
-            <Nav />
+            <Header />
             <div className="animate-background">
             <List />
             </div>
             <Footer />
-          </div>
         </Route>
       </Switch>
+     </div>
     </ Router >
   );
 }

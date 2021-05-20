@@ -19,19 +19,6 @@ export default function Nav(props) {
       <div className="roundInitial">A</div>
       </section>
       </div>
-      <div className="navMid">
-        <h3>Sites</h3>
-      </div>
-      <footer className="navFoot">
-        <section className="leftNavFoot">
-        <h3 id="allSites">All sites</h3>
-        <ArrowDropDownIcon id="downArrow" />
-        </section>
-        <section className="navSideIcons">
-          <FilterListIcon />
-          <SearchIcon />
-        </section>
-      </footer>
     </nav>
   );
 }
