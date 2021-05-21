@@ -192,6 +192,33 @@ box-shadow: #888888 2px 3px;
   flex-direction: column;
 }
 
+.Details container {
+  background-image: url('https://images.unsplash.com/photo-1599707254554-027aeb4deacd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
+  height: 30vh;
+  border: black solid 1px;
+} 
+
+.Details section {
+  display: flex;
+  height: Calc(100vh - 390px);
+}
+
+.icons {
+  display: flex;
+  margin: 16px;
+  flex-direction: column;
+}
+
+.icons svg {
+  margin: 16px;
+}
+
+.icons p {
+  text-align: left;
+  padding: 15px 15px 25px;
+  margin: 0;
+}
+
 .Detailhead {
   display: flex;
   align-items: center;

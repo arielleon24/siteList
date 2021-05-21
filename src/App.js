@@ -21,7 +21,7 @@ function App() {
      <div className="App">
       <Nav />
       <Switch>
-        <Route path="/home">
+        <Route exact path="/">
             <Header />
             <div className="animate-background">
             <List />
