@@ -1,4 +1,6 @@
 import './App.css';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import Nav from './components/Nav'
 import Header from './components/Header'
 import List from './components/List'
@@ -16,6 +18,24 @@ import {
 const history = createBrowserHistory();
 
 function App() {
+  const [Sites, SetSites] = useState([])
+
+  const axiosCall = () => {
+    axios
+      .get("http://localhost:3000/sites")
+      .then((response) => {
+        SetSites(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
+
+    useEffect(() => {
+      axiosCall();
+    }, []);
+
+
   return (
     <Router history={history}>
      <div className="App">
@@ -24,12 +44,12 @@ function App() {
         <Route exact path="/">
             <Header />
             <div className="animate-background">
-            <List />
+            <List sites = {Sites} />
             </div>
             <Footer />
         </Route>
         <Route path="/details">
-          <Details />
+          <Details sites = {Sites} />
         </Route>
       </Switch>
      </div>

@@ -134,7 +134,7 @@ they seem to inherit from the class just above this one */
 
 /* //change back to 194px if issues with footer */
 .siteList {
-  height: calc(100vh - 220px);
+  height: calc(100vh - 250px);
   padding-top: 10px;
 }
 
@@ -149,7 +149,7 @@ border-radius: 5%;
 margin: 8px auto;
 display: flex;
 justify-content: space-between;
-height: 5.5em;
+height: 6em;
 border:2px solid black;
 width: 95%;
 background-color: white;
@@ -166,7 +166,6 @@ box-shadow: #888888 2px 3px;
 }
 
 .SiteImage {
-  /* padding-top: 1em; */
   border-radius: 50%;
   height: 3.5em;
   width: 3.5em;
@@ -178,8 +177,8 @@ box-shadow: #888888 2px 3px;
 
 .SiteInfo {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  text-align: left;
   flex-direction: column;
   padding-left: 0.5em;
 }
