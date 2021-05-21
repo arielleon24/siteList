@@ -28,7 +28,7 @@ export default function Details(props) {
       <RoomIcon />
       </div>
       <div className="icons">
-      <p>name</p>
+      <p>name and title</p>
       <p>Phone</p>
       <p>Email</p>
       <p>Address</p>
