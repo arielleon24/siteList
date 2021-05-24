@@ -6,6 +6,10 @@ import EmailIcon from '@material-ui/icons/Email';
 import RoomIcon from '@material-ui/icons/Room';
 
 export default function Details(props) {
+
+  console.log("This is the received ID", props.id)
+  console.log(props)
+
   return (
     <div className="Details">
       <div className="Detailhead">

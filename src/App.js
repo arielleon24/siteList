@@ -18,11 +18,11 @@ import {
 const history = createBrowserHistory();
 
 function App() {
-  const [Sites, SetSites] = useState([])
+  const [Sites, SetSites] = useState([]);
+  const [Clients, SetClients] = useState([]);
 
   const axiosCall = () => {
-    axios
-      .get("http://localhost:3000/sites")
+    axios.get("http://localhost:3000/sites")
       .then((response) => {
         SetSites(response.data);
       })
@@ -49,7 +49,7 @@ function App() {
             <Footer />
         </Route>
         <Route path="/details">
-          <Details sites = {Sites} />
+          <Details clients = {Clients} />
         </Route>
       </Switch>
      </div>

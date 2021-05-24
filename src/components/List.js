@@ -2,12 +2,14 @@ import React from "react";
 import ListItem from "./ListItem"
 import Slide from 'react-reveal/Slide'
 
+
 export default function List(props) {
   const sitesArray = []
+  let limit = 5;
 
   const listArray = props.sites.map((result, index)=>{
     sitesArray.push(result)
-    if(index < 4) {
+    if(index < limit) {
       return (
         < ListItem key={result.id} result={result} />)}
     })
