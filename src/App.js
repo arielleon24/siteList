@@ -48,8 +48,8 @@ function App() {
             </div>
             <Footer />
         </Route>
-        <Route path="/details">
-          <Details clients = {Clients} />
+        <Route path="/details/:id">
+          <Details />
         </Route>
       </Switch>
      </div>

@@ -19,6 +19,8 @@ export default function ListItem(props) {
   //   console.log("ID before being passed", Id)
   // }
 
+  const url = `/details/${props.result.id}`
+
   return (
     <div className="ListItem">
       <div className="flex">
@@ -29,10 +31,9 @@ export default function ListItem(props) {
       <p> {props.result.contacts.main.phoneNumber} </p>
       </div>
       </div>
-      <a href="/details" >
+      <a href={url} >
       <ChevronRightIcon  className="ArrowNextPage"  onClick={ () => {
       console.log(props.result.id,"button had been clicked")
-      Id(props)
       }
       }/>
       </a>

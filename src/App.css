@@ -145,7 +145,6 @@ they seem to inherit from the class just above this one */
 } */
 
 .ListItem {
-border-radius: 5%;
 margin: 8px auto;
 display: flex;
 justify-content: space-between;
@@ -165,26 +164,28 @@ box-shadow: #888888 2px 3px;
   display: flex;
 }
 
-.SiteImage {
-  border-radius: 50%;
-  height: 3.5em;
-  width: 3.5em;
-}
 
 .ArrowNextPage {
   height: 50px;
 }
 
+
+
+/* details page */
 .SiteInfo {
   display: flex;
   align-items: flex-start;
   text-align: left;
   flex-direction: column;
   padding-left: 0.5em;
+  padding-bottom: 3px;
 }
 
-
-/* details page */
+.SiteImage {
+  border-radius: 50%;
+  height: 3.5em;
+  width: 3.5em;
+}
 
 .Details {
   display: flex;
@@ -199,23 +200,36 @@ box-shadow: #888888 2px 3px;
 
 .Details section {
   display: flex;
+  flex-direction: column;
   height: Calc(100vh - 390px);
 }
 
-.icons {
+.nameAndTitle {
   display: flex;
-  margin: 16px;
   flex-direction: column;
 }
 
+.nameAndTitle p {
+margin: 0px;
+}
+
+.icons {
+  display: -webkit-inline-box;
+  padding-left: 10px;
+
+  margin: 5px;
+}
+
 .icons svg {
-  margin: 16px;
+  margin-bottom: -5px;
+  vertical-align: middle;
 }
 
 .icons p {
+  display: inline-block;
   text-align: left;
-  padding: 15px 15px 25px;
-  margin: 0;
+  vertical-align: center;
+  padding: 0px 15px;
 }
 
 .Detailhead {

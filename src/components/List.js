@@ -5,7 +5,7 @@ import Slide from 'react-reveal/Slide'
 
 export default function List(props) {
   const sitesArray = []
-  let limit = 5;
+  let limit = 4;
 
   const listArray = props.sites.map((result, index)=>{
     sitesArray.push(result)
