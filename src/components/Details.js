@@ -12,6 +12,8 @@ export default function Details(props) {
 
   console.log("THIS IS THE ID we need", useParams().id)
   const url = `http://localhost:3000/sites/${useParams().id}`
+
+  const sitesArray = []
   
   
 
@@ -20,6 +22,7 @@ export default function Details(props) {
       .then((response) => {
         SetSites(response.data);
         console.log("this is the site Object", response.data)
+        sitesArray.push(response.data)
       })
       .catch((err) => {
         console.log(err);
@@ -30,40 +33,48 @@ export default function Details(props) {
       axiosCall();
     }, []);
 
-    console.log(Sites)
+    console.log("this is sites in DETAILS", Sites)
 
-  return (
-    <div className="Details">
-      <div className="Detailhead">
-    <ChevronLeftIcon class="ArrowNextPage" />
-    <img className="SiteImage" src="./logo192.png" alt="image"></img>
-    <div className="SiteInfo">
-    <p><b> {Sites.title} </b></p>
-    <p> {Sites.address.street}, {Sites.address.city},{Sites.address.country} </p>
-    <p> {Sites.contacts.main.firstName} {Sites.contacts.main.lastName} </p>
+    return (
+      <div className="Details">
+        <div className="Detailhead">
+      <ChevronLeftIcon class="ArrowNextPage" />
+      <img className="SiteImage" src="https://source.unsplash.com/random" alt="image"></img>
+      <div className="SiteInfo">
+      <p><b> {Sites.title} </b></p>
+      {Sites?.address ? <p> {Sites.address.street}, {Sites.address.city},{Sites.address.country} </p>
+      : <p>Not available</p> }
+      {Sites.contacts?.main?.firstName ? <p> {Sites.contacts.main.firstName} {Sites.contacts.main.lastName} </p> : <p>Not Working</p>}
+      </div>
+      </div>
+      <container className="Details">
+  
+      </container>
+      <section id="detailSection">
+        <div className="icons" >
+        <PersonIcon /> 
+        <div className="nameAndTitle">
+        {Sites.contacts ? <p>{Sites.contacts.main.firstName} {Sites.contacts.main.lastName}</p>: <p>Not available</p>}
+        {Sites.contacts ? <p>{Sites.contacts.main.jobTitle}</p>: <p>Not available</p>}
+        </div>
+        </div>
+        <div className="icons">
+          {Sites?.contacts?.main?.phoneNumber ? <div>
+          <PhoneIcon />  
+        <p>{Sites.contacts.main.phoneNumber}</p>         
+            </div>   :  ""}
+        </div>
+        <div className="icons">
+          {Sites?.contacts?.main?.email? <div>
+            <EmailIcon /> <p>{Sites.contacts.main.email}</p>
+          </div> : ""}
+        </div>
+        <div className="icons">
+        {Sites?.contacts?.main?.email? <div>
+          <RoomIcon /> <p>{Sites.contacts.main.address.street}, {Sites.contacts.main.address.city}</p>
+          </div> : ""}
+        </div>
+      </section>
     </div>
-    </div>
-    <container className="Details">
-
-    </container>
-    <section>
-      <div className="icons" >
-      <PersonIcon /> 
-      <div className="nameAndTitle">
-        <p>{Sites.contacts.main.firstName} {Sites.contacts.main.lastName}</p> <br />
-        <p>{Sites.contacts.main.jobTitle}</p>
-      </div>
-      </div>
-      <div className="icons">
-      <PhoneIcon />  <p>{Sites.contacts.main.phoneNumber}</p>
-      </div>
-      <div className="icons">
-      <EmailIcon /> <p>{Sites.contacts.main.email}</p>
-      </div>
-      <div className="icons">
-      <RoomIcon /> <p>{Sites.contacts.main.email}</p>
-      </div>
-    </section>
-  </div>
-  )
+    )
 }

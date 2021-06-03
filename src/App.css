@@ -220,6 +220,10 @@ margin: 0px;
   margin: 5px;
 }
 
+#detailSection {
+  padding-top: 25px;
+}
+
 .icons svg {
   margin-bottom: -5px;
   vertical-align: middle;
